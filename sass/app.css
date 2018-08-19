@@ -705,9 +705,11 @@ section h3 {
 
 .footer > p {
   margin: 0 auto;
-  width: 100%;
+  height: 18px;
   text-align: center;
   color: #fff;
+  font-family: sans-serif;
+  opacity: .75;
 }
 
 /*  ===   OVERRIDES    ===  */
