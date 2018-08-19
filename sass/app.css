@@ -779,4 +779,43 @@ section h3 {
   text-align: center;
   font-size: 1em;
 }
+
+.re {
+  width: 100%;
+}
+
+/*  ===   MEDIA QUERIES    ===  */
+@media (max-width: 600px) {
+  .header ul {
+    padding: 25px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .header ul li {
+    margin: 0;
+  }
+  .header ul li:first-child {
+    margin-bottom: -20px;
+  }
+  .slide-1 div h3 {
+    text-align: center;
+  }
+  .slide-1 div p {
+    text-align: center;
+  }
+  .about {
+    padding: 25px 0;
+    height: auto;
+    width: 100%;
+  }
+  .about h3, .about p {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .contact form {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=app.css.map */
