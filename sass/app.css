@@ -784,6 +784,10 @@ section h3 {
   width: 100%;
 }
 
+section h3 a {
+  margin: 0;
+}
+
 /*  ===   MEDIA QUERIES    ===  */
 @media (max-width: 600px) {
   .header ul {
