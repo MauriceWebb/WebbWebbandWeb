@@ -39,6 +39,24 @@ section h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+}
+
+.header label {
+  position: absolute;
+  right: 10%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 26px;
+  line-height: 50px;
+  color: #fff;
+  width: 26px;
+  display: none;
+}
+
+.header #toggle {
+  display: none;
 }
 
 .header ul {
@@ -791,13 +809,24 @@ section h3 a {
 }
 
 /*  ===   MEDIA QUERIES    ===  */
-@media (max-width: 600px) {
+@media (max-width: 610px) {
+  .header label {
+    display: block;
+    cursor: pointer;
+  }
+  .header #toggle:checked ~ ul {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .header ul {
     padding: 25px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+    display: none;
   }
   .header ul li {
     margin: 0;
