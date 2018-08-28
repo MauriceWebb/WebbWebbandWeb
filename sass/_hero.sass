@@ -9,6 +9,7 @@
         height: 100%
         background-color: #40407a
         overflow: hidden
+        position: relative
         ul
             width: 100%
             height: 100%
@@ -43,6 +44,39 @@
                         color: #fff
                         font-size: 1.1em
                         box-sizing: border-box
+                        border: 2px solid #40407a
                         &:hover
                             border: 2px solid #fff
-            
+        .buttons
+            // border: 1px solid red
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            width: 100%
+            max-width: 1200px
+            z-index: 999
+            position: relative
+            top: -58%
+            margin: 0 auto
+            text-align: center
+            button
+                display: block
+                color: #ffffff
+                background-color: transparent
+                border: none
+                height: 50px
+                width: 40px
+                &:hover
+                    background-color: $light
+                &:active
+                    border: none
+                    background-color: $dark
+                &:focus
+                    outline: 0
+                    // background-color: $dark
+                #prev
+                    float: left
+                #next
+                    float: right
+                
+
