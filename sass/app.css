@@ -134,6 +134,7 @@ section h3 {
   height: 100%;
   background-color: #40407a;
   overflow: hidden;
+  position: relative;
 }
 
 .hero .slider ul {
@@ -213,6 +214,56 @@ section h3 {
 
 .hero .slider ul .slide-1 div #s1-b:hover {
   border: 2px solid #fff;
+}
+
+.hero .slider .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 999;
+  position: relative;
+  top: -58%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero .slider .buttons button {
+  display: block;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 40px;
+}
+
+.hero .slider .buttons button:hover {
+  background-color: #706fd3;
+}
+
+.hero .slider .buttons button:active {
+  border: none;
+  background-color: #2c2c54;
+}
+
+.hero .slider .buttons button:focus {
+  outline: 0;
+}
+
+.hero .slider .buttons button #prev {
+  float: left;
+}
+
+.hero .slider .buttons button #next {
+  float: right;
 }
 
 /*  === SERVICES   ===*/
@@ -343,14 +394,21 @@ section h3 {
 }
 
 .gallery ul li {
-  margin: 25px 10px;
+  margin: auto;
   min-width: 200px;
-  height: 200px;
+  height: 248px;
   border-radius: 5px;
   background-color: #d9d9d9;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.gallery ul li img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery ul li:nth-child(1) {
@@ -359,16 +417,48 @@ section h3 {
           flex-grow: 3;
 }
 
+.gallery ul li:nth-child(1) img {
+  background-image: url("https://static.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&h=650&w=940");
+}
+
+.gallery ul li:nth-child(2) img {
+  background-image: url("https://static.pexels.com/photos/273222/pexels-photo-273222.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+}
+
+.gallery ul li:nth-child(3) img {
+  background-image: url("https://static.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+}
+
 .gallery ul li:nth-child(4) {
   -webkit-box-flex: 3;
       -ms-flex-positive: 3;
           flex-grow: 3;
 }
 
+.gallery ul li:nth-child(4) img {
+  background-image: url("https://static.pexels.com/photos/273230/pexels-photo-273230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+}
+
+.gallery ul li:nth-child(5) img {
+  background-image: url("https://static.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+}
+
+.gallery ul li:nth-child(6) img {
+  background-image: url("https://static.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+}
+
+.gallery ul li:nth-child(7) img {
+  background-image: url("https://static.pexels.com/photos/196646/pexels-photo-196646.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+}
+
 .gallery ul li:nth-child(8) {
   -webkit-box-flex: 5;
       -ms-flex-positive: 5;
           flex-grow: 5;
+}
+
+.gallery ul li:nth-child(8) img {
+  background-image: url("https://static.pexels.com/photos/545331/pexels-photo-545331.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
 }
 
 .gallery ul li a {
@@ -426,15 +516,14 @@ section h3 {
 
 .about ul li {
   height: 500px;
-  min-width: 260px;
-  min-width: 50%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -442,7 +531,8 @@ section h3 {
 
 .about ul li div {
   margin: 0 auto;
-  height: 30%;
+  height: 100%;
+  max-width: 305px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,6 +540,9 @@ section h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about ul li div h3 {
@@ -460,6 +553,9 @@ section h3 {
 }
 
 .about ul li div p {
+  display: block;
+  padding: 10px 0;
+  height: 80px;
   text-align: center;
   color: #fff;
 }
@@ -845,9 +941,15 @@ section h3 a {
   .slide-1 div p {
     text-align: center;
   }
+  .gallery ul li:nth-child(2), .gallery ul li:nth-child(3), .gallery ul li:nth-child(4) {
+    margin-top: 0;
+  }
   .about {
     padding: 25px 0;
     height: auto;
+    width: 100%;
+  }
+  .about ul li {
     width: 100%;
   }
   .about h3, .about p {
