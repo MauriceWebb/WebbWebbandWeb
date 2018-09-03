@@ -137,41 +137,22 @@ section h3 {
   position: relative;
 }
 
-.hero .slider ul {
-  width: 100%;
+.hero .slider .slide {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.hero .slider ul li {
-  width: 100%;
-  height: 100%;
-}
-
-.hero .slider ul .slide-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.hero .slider ul .slide-1 div {
+.hero .slider .slide div {
   height: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,20 +168,20 @@ section h3 {
           align-items: center;
 }
 
-.hero .slider ul .slide-1 div h3 {
+.hero .slider .slide div h3 {
   color: #fff;
   font-size: 2.5em;
 }
 
-.hero .slider ul .slide-1 div h3 span {
+.hero .slider .slide div h3 span {
   color: #706fd3;
 }
 
-.hero .slider ul .slide-1 div p {
+.hero .slider .slide div p {
   color: #fff;
 }
 
-.hero .slider ul .slide-1 div #s1-b {
+.hero .slider .slide div #s1-b {
   padding: 8px 12px;
   border: 0;
   border-radius: 5px;
@@ -212,7 +193,7 @@ section h3 {
   border: 2px solid #40407a;
 }
 
-.hero .slider ul .slide-1 div #s1-b:hover {
+.hero .slider .slide div #s1-b:hover {
   border: 2px solid #fff;
 }
 
@@ -230,8 +211,10 @@ section h3 {
   width: 100%;
   max-width: 1200px;
   z-index: 999;
-  position: relative;
-  top: -58%;
+  position: absolute;
+  top: 44%;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -264,6 +247,51 @@ section h3 {
 
 .hero .slider .buttons button #next {
   float: right;
+}
+
+.hero .radioDots {
+  margin: 0 auto;
+  height: 30px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: 32px;
+}
+
+.hero .radioDots .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.hero .radioDots .dot:hover {
+  background-color: #717171;
+}
+
+.hero .radioDots .dot:visited {
+  background-color: #717171;
+}
+
+.hero .radioDots .active {
+  background-color: #717171;
 }
 
 /*  === SERVICES   ===*/
