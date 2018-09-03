@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Carme|Raleway" rel="stylesheet">
 		  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Webb Webb & Web Services</title>
   </head>
   <body>
 
@@ -29,32 +29,51 @@
 
       <section class="hero">
         
-        <figure class="slider">
-        
-          <ul>
+        <div class="slider">
           
-            <li class="slide-1">
-            
-              <div class="centered">
-                
-                <h3>Webb, Webb, <span>&</span> Web</h3>
-                <br>
-                <p>This is where the description of the first slide goes.</p>
-                <br>
-                <a href="#AboutUs" id="s1-b">Learn More!</a>
-              
-              </div>
-            
-            </li>
+          <div class="slide">
+            <div class="centered">
+              <h3>Webb, Webb, <span>&</span> Web</h3>
+              <br>
+              <p>This is where the description of the first slide goes.</p>
+              <br>
+              <a href="#AboutUs" id="s1-b">Learn More!</a>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="centered">
+              <h3>This is the second slide</h3>
+              <br>
+              <p>This is where the description of the second slide goes.</p>
+              <br>
+              <a href="#AboutUs" id="s1-b">Subscribe</a>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="centered">
+              <h3>This is the third slide</h3>
+              <br>
+              <p>This is where the description of the third slide goes.</p>
+              <br>
+              <a href="#AboutUs" id="s1-b">Read More</a>
+            </div>
+          </div>
           
-          </ul>
 
           <div class="buttons">
-            <button class="button" id="prev">&larr;</button>
-            <button class="button" id="next">&rarr;</button>
+            <button class="button" id="prev" onclick="plusSlides(-1)">&larr;</button>
+            <button class="button" id="next" onclick="plusSlides(1)">&rarr;</button>
           </div>
         
-        </figure>
+        </div>
+
+        <div class="radioDots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
 
       </section>
       <section class="services">
@@ -238,5 +257,8 @@
       </section>
     </div>
 
+
+    <!-- Load Javascript -->
+    <script src="app.js"></script>
   </body>
 </html>
