@@ -37,17 +37,30 @@
                     height: 80px
                     text-align: center
                     color: #fff
-                a
+                span
+                    // border: 1px solid red
                     margin: 0 auto
                     margin-top: 15px
-                    padding: 8px 12px
-                    text-align: center
-                    background-color: #706fd3
-                    color: #fff
-                    border-radius: 5px
-                    border: 2px solid #706fd3
-                a:hover
-                    border: 2px solid #fff 
+                    height: auto
+                    width: auto
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    align-items: center
+                    a
+                        margin: 0 10px
+                        padding: 8px 12px
+                        text-align: center
+                        background-color: #706fd3
+                        color: #fff
+                        border-radius: 5px
+                        border: 2px solid #706fd3
+                        &:last-child
+                            background-color: $dark
+                            border: 2px solid $dark
+                    a:hover
+                        border: 2px solid #fff
+                        
         li:nth-child(1)
 
             background-color: $medium-dark 

@@ -591,9 +591,28 @@ section h3 {
   color: #fff;
 }
 
-.about ul li div a {
+.about ul li div span {
   margin: 0 auto;
   margin-top: 15px;
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about ul li div span a {
+  margin: 0 10px;
   padding: 8px 12px;
   text-align: center;
   background-color: #706fd3;
@@ -602,7 +621,12 @@ section h3 {
   border: 2px solid #706fd3;
 }
 
-.about ul li div a:hover {
+.about ul li div span a:last-child {
+  background-color: #2c2c54;
+  border: 2px solid #2c2c54;
+}
+
+.about ul li div span a:hover {
   border: 2px solid #fff;
 }
 
