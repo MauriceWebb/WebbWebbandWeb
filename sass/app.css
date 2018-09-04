@@ -105,11 +105,6 @@ section h3 {
   font-size: 1.5em;
 }
 
-.header ul li:first-child a img {
-  height: 50px;
-  width: 50px;
-}
-
 .header ul li:first-child a span {
   color: #40407a;
 }
@@ -810,11 +805,6 @@ section h3 {
   width: 50px;
   color: #706fd3;
   font-size: 1.5em;
-}
-
-.f-card-1 > ul > li:first-child > a > img {
-  height: 50px;
-  width: 50px;
 }
 
 .f-card-2 {
