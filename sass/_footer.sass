@@ -27,16 +27,30 @@
     display: flex
     flex-direction: column
     justify-content: space-between
-    align-content: center
+    align-content: left
+    text-align: left
 
 .f-card-1 > ul > li
     padding: 5px 8px
+    height: auto
+    width: 90px
+    align-items: left
+
+.f-card-1 > ul > li:first-child
+    margin: 0
+    height: 50px
+    line-height: 50px
 
 .f-card-1 > ul > li > a
+    display: inline-block
+    width: auto
+    // max-width: 80px
+    height: auto
+    line-height: 20px
     border-radius: 5px
     padding: 4px 8px
     color: #fff
-    text-align: center
+    text-align: left
     border: 2px solid #2c2c54
       
 .f-card-1 > ul > li > a:hover
@@ -46,11 +60,13 @@
     background-color: #474787
 
 .f-card-1 > ul > li:first-child > a
+    height: auto
+    width: 50px
     color: #706fd3
     font-size: 1.5em
-      
-.f-card-1 > ul > li:first-child > a > span
-    color: #40407a
+.f-card-1 > ul > li:first-child > a > img
+    height: 50px
+    width: 50px
 
 .f-card-2
     height: 100%
