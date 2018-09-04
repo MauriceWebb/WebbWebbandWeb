@@ -88,6 +88,9 @@ section h3 {
 }
 
 .header ul li:first-child {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
   text-align: left;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
@@ -95,8 +98,16 @@ section h3 {
 }
 
 .header ul li:first-child a {
+  margin-top: -6px;
+  height: 100%;
+  width: 50px;
   color: #706fd3;
   font-size: 1.5em;
+}
+
+.header ul li:first-child a img {
+  height: 50px;
+  width: 50px;
 }
 
 .header ul li:first-child a span {
@@ -754,19 +765,35 @@ section h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-line-pack: left;
+      align-content: left;
+  text-align: left;
 }
 
 .f-card-1 > ul > li {
   padding: 5px 8px;
+  height: auto;
+  width: 90px;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.f-card-1 > ul > li:first-child {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
 }
 
 .f-card-1 > ul > li > a {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  line-height: 20px;
   border-radius: 5px;
   padding: 4px 8px;
   color: #fff;
-  text-align: center;
+  text-align: left;
   border: 2px solid #2c2c54;
 }
 
@@ -779,12 +806,15 @@ section h3 {
 }
 
 .f-card-1 > ul > li:first-child > a {
+  height: auto;
+  width: 50px;
   color: #706fd3;
   font-size: 1.5em;
 }
 
-.f-card-1 > ul > li:first-child > a > span {
-  color: #40407a;
+.f-card-1 > ul > li:first-child > a > img {
+  height: 50px;
+  width: 50px;
 }
 
 .f-card-2 {
